@@ -6,15 +6,15 @@
     android:layout_height="match_parent">
 
     <TextView
+        android:id="@+id/calc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/red"
         android:text="CALCULATOR"
         android:textAlignment="center"
-        android:textStyle="bold"
-        android:id="@+id/calc"
+        android:textColor="@color/white"
         android:textSize="40dp"
-        android:textColor="@color/grey"
-        android:background="@color/maroon"/>
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/angka_1"
@@ -28,9 +28,12 @@
         android:id="@+id/angka_2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="3dp"
         android:layout_below="@+id/angka_1"
-        android:hint="Masukkan Angka Kedua"/>
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="3dp"
+        android:hint="Masukkan Angka Kedua" />
 
     <RelativeLayout
         android:layout_width="wrap_content"
@@ -44,7 +47,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="+"
-            android:background="@color/pink"
+            android:backgroundTint="@color/darkred"
             android:layout_margin="8px"/>
 
         <Button
@@ -53,7 +56,7 @@
             android:layout_height="wrap_content"
             android:text="-"
             android:layout_toRightOf="@+id/tambah"
-            android:background="@color/pink"
+            android:backgroundTint="@color/darkred"
             android:layout_margin="8px"/>
 
         <Button
@@ -62,7 +65,7 @@
             android:layout_height="wrap_content"
             android:layout_toRightOf="@+id/minus"
             android:text="*"
-            android:background="@color/pink"
+            android:backgroundTint="@color/darkred"
             android:layout_margin="8px"/>
 
         <Button
@@ -71,7 +74,7 @@
             android:layout_height="wrap_content"
             android:layout_toRightOf="@+id/kali"
             android:text="/"
-            android:background="@color/pink"
+            android:backgroundTint="@color/darkred"
             android:layout_margin="8px"/>
     </RelativeLayout>
 

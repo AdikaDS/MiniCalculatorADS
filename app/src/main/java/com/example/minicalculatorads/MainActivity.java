@@ -18,7 +18,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+
+        setContentView(R.layout.activity_main); //Tinggal diganti jika ingin menjalankan tampilan activity lain
         angkaPertama = (EditText) findViewById(R.id.angka_1);
         angkaKedua =  (EditText) findViewById(R.id.angka_2);
         buttonTambah = (Button) findViewById(R.id.tambah);
